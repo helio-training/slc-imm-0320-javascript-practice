@@ -1,4 +1,4 @@
-// 'var', 'const', 'let Walkthrough & Examples
+// 'var', 'const', 'let' Walkthrough & Examples
 
 // Want to avoid using 'var'
 var count = 0;
@@ -21,6 +21,8 @@ console.log('First time', time)
 // 'let' can be reassigned a new value, that value is an object
 time = { date: new Date() }
 console.log('Second time', time)
+// Accessing the 'date' property of 'time' via dot notation
+console.log('date of time', time.date)
 
 // BLOCK SCOPE Walkthrough & Examples
 
