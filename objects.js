@@ -32,5 +32,8 @@ const personTwo = {
     sayName: function () { console.log('Hello, I\'m', this.firstName, this.lastName); }
 }
 console.table([personOne, personTwo]);
-personOne.sayName()
-personTwo.sayName()
+personOne.sayName();
+personTwo.sayName();
+personTwo.firstName = "Mike";
+personTwo.lastName = 'Corey';
+personTwo.sayName();
