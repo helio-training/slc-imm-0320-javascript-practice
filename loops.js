@@ -47,6 +47,8 @@ while (i < 10) {
 
 for(let count = 1; count < 10; count++){
    if(count % 2 == 0){
-       console.log('Even Number', count)
-   } 
+       console.log('Even Number', count);
+   } else {
+       console.log('Odd Number', count);
+   }
 }
