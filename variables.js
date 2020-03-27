@@ -13,16 +13,22 @@ console.log('count equals', count)
 // 'const' can't be reassigned, start with 'const' and ask, 'Will this Change?'
 const constant = 'Hello World'
 // constant = 6 // Won't work
-console.log('constant equals', constant)
+console.log('constant equals', constant);
 
 // Variables with 'let' can change
-let time = new Date()
-console.log('First time', time)
+let time = new Date();
+console.log('First time', time);
+// Exposing the 'typeof' on time
+console.log('Type Of first time:', typeof time);
 // 'let' can be reassigned a new value, that value is an object
-time = { date: new Date() }
-console.log('Second time', time)
+time = { date: new Date() };
+console.log('Second time', time);
+// Exposing the 'typeof' on time
+console.log('Type Of second time:', typeof time);
 // Accessing the 'date' property of 'time' via dot notation
-console.log('date of time', time.date)
+console.log('date of time', time.date);
+
+
 
 // BLOCK SCOPE Walkthrough & Examples
 
