@@ -45,7 +45,7 @@ const hello = () => { console.log('Hello World'); }
 hello();
 
 // Syntactic Sugar of a full Arrow Syntax, is unique to Arrow Syntax
-// Only works with one parameter, one expression, and auto returns the evaluate expression
+// Only works with one parameter, one expression, and auto returns the evaluated expression
 const arrowCounter = x => x + 1;
 // Desugared
 // const arrowCounter = (x) => { return x + 1; }
@@ -56,7 +56,9 @@ arrowCount = arrowCounter(arrowCount);
 console.log('Arrow Count', arrowCount); // 3
 
 // Passing Functions as Variables, not unique to Arrow, AKA Callback Function
-const consumeFunction = (func, counter) => { return func(counter + 1); }
+const consumeFunction = (func, counter) => { 
+    return func(counter + 1); 
+}
 // Nesting calls without declaring Variables
 console.log('Functions as Variables', 
     consumeFunction(arrowCounter, arrowCount)); // 5

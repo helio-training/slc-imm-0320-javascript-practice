@@ -7,6 +7,11 @@ console.log(myArray);
 myArray[index] = myArray[2].toUpperCase();
 console.log(myArray);
 
+// Looping over an Array using a changing Index
+for(let i = 0; i < myArray.length; i++){
+    console.log(`Name at index:${i} is`, myArray[i]);
+}
+
 // Adding to the end of an Array
 myArray.push('Mike');
 console.log(myArray);
@@ -34,3 +39,5 @@ console.log(names);
 const academics = [ mike, wes ];
 const fullClass = myArray.concat(academics);
 console.log(fullClass);
+console.log(academics);
+console.log(myArray);

@@ -52,3 +52,21 @@ for(let count = 1; count < 10; count++){
        console.log('Odd Number', count);
    }
 }
+
+// Lower scoped variables can have the same name if using 'const' or 'let'
+for (let i = 1; i < 10; i++) {
+    if (i % 2 == 0) {
+        console.log('Even Number', i);
+    } else {
+        console.log('Odd Number', i);
+    }
+}
+
+// Breaks the file because 'var' transcends scope
+// for (var i = 1; i < 10; i++) {
+//     if (i % 2 == 0) {
+//         console.log('Even Number', i);
+//     } else {
+//         console.log('Odd Number', i);
+//     }
+// }
